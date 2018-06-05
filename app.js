@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
-var bodyparser = require('body-parser');
+var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var expressValidator = require('express-validator');
 var flash = require('connect-flash');
@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/loginapp');
 var db = mongoose.connection;
 
-var route = require('./routes/index');
+var routes = require('./routes/index');
 var users = require('./routes/users');
 
 // Init loginapp
